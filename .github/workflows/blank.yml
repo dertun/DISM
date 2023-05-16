@@ -37,4 +37,4 @@ jobs:
           artifact-name: EmpowerHelloWorld # optional
           # The version number for the artifact. Only required for a release run. (format A.B.C). E.g. 1.0.1. Required for stages Upload and All if no build number was provided instead.
           version: 1.0.0 # optional
-          build-number: github.run_number # optional
+          build-number: ${{ github.run_number}} # optional
