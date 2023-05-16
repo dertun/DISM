@@ -34,14 +34,7 @@ jobs:
           # The path to the .sln file of the solution. Atm only DataMiner Automation Script solutions are supported. E.g ./Example/AutomationScript.sln. Required for stages: All and Upload.
           solution-path: AutomationScript.sln
           # The chosen name of the artifact. E.g. MyPackageName.  Required for stages: All, Upload and Deploy.
-          artifact-name: # optional
+          artifact-name: EmpowerHelloWorld # optional
           # The version number for the artifact. Only required for a release run. (format A.B.C). E.g. 1.0.1. Required for stages Upload and All if no build number was provided instead.
           version: 1.0.0 # optional
-          # The maximum time spent on waiting for the deployment to finish in seconds. E.g. 900.
-          timeout: # optional, default is 900
-          # The specific stage to run in this action. Possible values are: All, Upload, and Deploy. All will run all 3 stages consecutively.
-          stage: # optional, default is All
-          # The artifact Id of the artifact that you would like to deploy
-          artifact-id: EmpowerHelloWorld# optional
-          # The build number of a workflow run. Only required for a development run. Required for stages Upload and All if no version was provided instead.
           build-number: github.run_number # optional
